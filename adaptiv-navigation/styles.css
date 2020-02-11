@@ -1,0 +1,62 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #333333;
+}
+.navbar{
+background-color: #f8ab76;
+display: table;
+width: 90%;
+margin-left: 5%;
+margin-top: 2em;
+position: relative;
+
+}
+.navbar li:not(:first-child){
+text-align: center;
+}
+.navbar img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.navbar a{
+    text-decoration: none;
+    padding: 1em 1.5em;
+    display: block;
+    color: #333333;
+    border-right: 1px solid #333333;
+}
+.navbar ul{
+    display: table-row;
+}
+.navbar ul li:first-child{
+    width: calc(96px + 3em);}
+.navbar ul li{
+    display: table-cell;
+    vertical-align: middle;
+}
+.navbar li:first-child a{
+    width: 6em;
+    height: 1em;
+}
+.navbar li:last-child a{
+    border: none;
+    /* display: none; */
+    height: 1em;
+}
+.navbar li:last-child{
+    display: none;
+}
+/* Adaptiv for smoll screen */
+@media (max-width:950px){
+    .navbar li:nth-child(2),
+    .navbar li:nth-child(3),
+    .navbar li:nth-child(4){
+        display: none;
+    }
+    .navbar li:last-child{
+        display: table-cell;
+    }
+}
+/* Petntru ecrane mai mici ca  1000px sa se transgorme imafinea marie in imaginea mica ( html <picture>) + img  (atentie la selectori)*/ 
